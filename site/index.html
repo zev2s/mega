@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10152b">
+  <meta name="description" content="Видео — смотрите онлайн.">
+  <title>Смотреть видео</title>
+  <style>
+    :root { color-scheme: dark; --bg: #10152b; --panel: #1a2140; --accent: #9b8cff; --text: #f7f6ff; --muted: #b8bad0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; padding: 32px 18px; display: grid; place-items: center; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--text); background: radial-gradient(ellipse at 50% 0%, #30396b 0, var(--bg) 65%); }
+    main { width: min(100%, 900px); padding: clamp(22px, 5vw, 44px); border: 1px solid #ffffff1c; border-radius: 24px; background: #171d38eF; box-shadow: 0 24px 80px #0007; text-align: center; }
+    h1 { margin: 0 0 10px; font-size: clamp(1.8rem, 5vw, 2.7rem); letter-spacing: -.03em; }
+    .intro { margin: 0 auto 26px; max-width: 560px; color: var(--muted); line-height: 1.6; }
+    .video { overflow: hidden; width: 100%; aspect-ratio: 16 / 9; border-radius: 16px; background: #080b17; box-shadow: 0 12px 36px #0005; }
+    iframe { display: block; width: 100%; height: 100%; border: 0; }
+    .actions { margin-top: 24px; }
+    .button { display: inline-flex; min-height: 50px; align-items: center; justify-content: center; padding: 0 24px; border-radius: 12px; color: #17142b; background: var(--accent); font-weight: 750; text-decoration: none; transition: transform .15s ease, filter .15s ease; }
+    .button:hover { transform: translateY(-2px); filter: brightness(1.08); }
+    .button:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+    .note { margin: 18px 0 0; color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Смотреть видео</h1>
+    <p class="intro">Нажмите на видео, чтобы начать просмотр. Если плеер не открылся, воспользуйтесь кнопкой ниже.</p>
+    <div class="video">
+      <iframe
+        src="https://mega.nz/embed/rH4DSZ7b#3el56nbm4nenppRiJbB2LKbj4dmYhOMv0UR-o_nnArk"
+        title="Видео на MEGA"
+        allow="fullscreen; picture-in-picture"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <div class="actions">
+      <a class="button" href="https://mega.nz/embed/rH4DSZ7b#3el56nbm4nenppRiJbB2LKbj4dmYhOMv0UR-o_nnArk" target="_blank" rel="noopener noreferrer">Открыть видео на MEGA</a>
+    </div>
+    <p class="note">Страница открывает видео с помощью плеера MEGA.</p>
+  </main>
+</body>
+</html>
